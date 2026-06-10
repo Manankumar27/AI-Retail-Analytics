@@ -184,6 +184,19 @@ AI Retail Analytics & Forecasting Platform
 
 ---
 
+## Screenshots
+
+### Dashboard
+* (screenshots/dashboard.png)
+
+### AI Insights
+* (screenshots/insights.png)
+
+### Forecasting
+* (screenshots/forecast.png)
+
+---
+
 ## License
 
 This project is developed for educational and academic purposes.
