@@ -1,0 +1,182 @@
+/* =========================
+   GLOBAL
+========================= */
+
+body{
+    margin:0;
+    padding:0;
+    background:#121212;
+    color:white;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* =========================
+   LAYOUT
+========================= */
+
+.wrapper{
+    display:flex;
+}
+
+/* =========================
+   SIDEBAR
+========================= */
+
+#sidebar{
+    width:240px;
+    min-height:100vh;
+    background:#111827;
+    position:fixed;
+    left:0;
+    top:0;
+    padding:25px;
+    border-right:1px solid #2d3748;
+}
+
+.logo{
+    color:white;
+    font-size:18px;
+    font-weight:700;
+    margin-bottom:40px;
+}
+
+#sidebar ul{
+    list-style:none;
+    padding:0;
+    margin:0;
+}
+
+#sidebar ul li{
+    margin-bottom:12px;
+}
+
+#sidebar ul li a{
+    display:block;
+    color:#e5e7eb;
+    text-decoration:none;
+    padding:14px 18px;
+    border-radius:12px;
+    transition:0.3s;
+    font-size:20px;
+}
+
+#sidebar ul li a:hover{
+    background:#374151;
+    color:white;
+}
+
+.active{
+    background:#4f46e5;
+    color:white !important;
+}
+
+.developer{
+    position:absolute;
+    bottom:30px;
+    left:25px;
+    color:#9ca3af;
+    font-size:16px;
+}
+
+/* =========================
+   MAIN CONTENT
+========================= */
+
+#content{
+    margin-left:240px;
+    width:calc(100% - 240px);
+    padding:30px;
+}
+
+/* =========================
+   TITLES
+========================= */
+
+h1{
+    font-weight:700;
+    font-size:60px;
+}
+
+.subtitle{
+    color:#9ca3af;
+    font-size:22px;
+    margin-bottom:40px;
+}
+
+/* =========================
+   KPI CARDS
+========================= */
+
+.card{
+    background:#1e1e1e;
+    color:white;
+    border:none;
+    border-radius:18px;
+    overflow:hidden;
+}
+
+.card:hover{
+    transform:translateY(-5px);
+    transition:0.3s;
+}
+
+.card h5{
+    font-size:18px;
+}
+
+.card h2{
+    font-size:28px;
+    font-weight:bold;
+    white-space:nowrap;
+}
+
+/* =========================
+   CHART CARDS
+========================= */
+
+.chart-card{
+    background:#1e1e1e;
+    border-radius:18px;
+    padding:15px;
+}
+
+/* =========================
+   HR
+========================= */
+
+hr{
+    border:1px solid #333;
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+    color:#9ca3af;
+    margin-top:40px;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media(max-width:992px){
+
+    #sidebar{
+        width:220px;
+    }
+
+    #content{
+        margin-left:220px;
+        width:calc(100% - 220px);
+    }
+
+    h1{
+        font-size:40px;
+    }
+
+    .card h2{
+        font-size:38px;
+    }
+}
